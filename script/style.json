@@ -1,0 +1,216 @@
+{
+  "Elements": {
+    "Button": [
+      "BorderColor",
+      "BorderThickness",
+      "Color",
+      "Fill",
+      "Font",
+      "RadiusBottomLeft",
+      "RadiusBottomRight",
+      "RadiusTopLeft",
+      "RadiusBottomRight",
+      "Size",
+      "Width",
+      "Height"
+    ],
+    "Label": [
+      "Color",
+      "FontWeight",
+      "Font",
+      "Size"
+    ],
+    "Checkbox": [
+      "CheckboxBorderColor",
+      "CheckboxBackgroundFill",
+      "Color",
+      "Font",
+      "Size"
+    ],
+    "Radio": [
+      "Color",
+      "Font",
+      "RadioBorderColor",
+      "RadioBackgroundFill",
+      "Size"
+    ],
+    "TextInput": [
+      "BorderColor",
+      "Color",
+      "Font",
+      "Size",
+      "Fill"
+    ],
+    "Dropdown": [
+      "BorderColor",
+      "ChevronBackground",
+      "ChevronFill",
+      "Color",
+      "Font",
+      "Size"
+    ],
+    "Icon": [
+      "Color",
+      "PaddingTop",
+      "PaddingBottom",
+      "PaddingLeft",
+      "PaddingRight"
+    ],
+    "Shape": [
+      "BorderThickness",
+      "Fill"
+    ],
+    "Image": [
+      "BorderColor"
+    ],
+    "Gallery": [
+      "Fill"
+    ]
+  },
+  "Design_Variations": {
+    "Primary": {
+      "Primary_Button": {
+        "Color": "RGBA(255, 255, 255,1)",
+        "Fill": "RGBA(0, 134, 208, 1)",
+        "BorderColor" : "RGBA(0, 134, 208, 1)",
+        "BorderThickness":"0",
+        "RadiusBottomLeft": "20",
+        "RadiusBottomRight": "20",
+        "RadiusTopLeft": "20",
+        "RadiusTopRight": "20",
+        "Font": "Font.'Open Sans'",
+        "Size": "16",
+        "Width" : "190",
+        "Height" : "56"
+      },
+      "Primary_Label": {
+        "FontWeight" : "FontWeight.Bold",
+        "Size" : "20",
+        "Font" : "Font.'Open Sans'",
+        "Color" :"RGBA(0, 0, 0, 1)"
+      },
+      "Primary_Checkbox": {
+        "CheckboxBorderColor": "RGBA(47,47,47,1)",
+        "CheckboxBackgroundFill": "RGBA(139,141,137,1)"
+      },
+      "Primary_Radio": {
+        "RadioBorderColor": "RGBA(47,47,47,1)",
+        "RadioBackgroundFill": "RGBA(139,141,137,1)"
+      },
+      "Primary_TextInput": {},
+      "Primary_Dropdown": {
+        "ChevronBackground": "RGBA(47,47,47,1)",
+        "ChevronFill": "RGBA(139,141,137,1)"
+      },
+      "Primary_Icon": {
+        "Color" : "RGBA(0, 134, 208, 1)",
+        "PaddingTop" : "15",
+        "PaddingBottom" : "15",
+        "PaddingLeft" : "15",
+        "PaddingRight" : "15"
+      },
+      "Primary_Shape": {
+        "BorderThickness": "0",
+        "Fill": "RGBA(219, 238, 248,1)"
+      },
+      "Primary_Image": {},
+      "Primary_Gallery": {}
+    },
+    "Secondary": {
+      "Secondary_Button": {
+        "Color": "RGBA(255, 255, 255,1)",
+        "Fill": "RGBA(246, 88, 16, 1)",
+        "BorderThickness":"0",
+        "BorderColor" : "RGBA(246, 88, 16, 1)",
+        "RadiusBottomLeft": "20",
+        "RadiusBottomRight": "20",
+        "RadiusTopLeft": "20",
+        "RadiusTopRight": "20",
+        "Font": "Font.'Open Sans'",
+        "Size": "16",
+        "Width" : "190",
+        "Height" : "56"
+      },
+      "Secondary_Label": {
+        "FontWeight" : "FontWeight.Normal",
+        "Size" : "14",
+        "Font" : "Font.'Open Sans'",
+        "Color" :"RGBA(0, 0, 0, 1)"
+      },
+      "Secondary_Checkbox": {
+        "CheckboxBorderColor": "RGBA(52, 89, 149,1)",
+        "CheckboxBackgroundFill": "RGBA(139,141,137,1)"
+      },
+      "Secondary_Radio": {
+        "RadioBorderColor": "RGBA(52, 89, 149,1)",
+        "RadioBackgroundFill": "RGBA(139,141,137,1)"
+      },
+      "Secondary_TextInput": {},
+      "Secondary_Dropdown": {
+        "ChevronBackground": "RGBA(52, 89, 149,1)",
+        "ChevronFill": "RGBA(139,141,137,1)"
+      },
+      "Secondary_Icon": {
+        "Color" : "RGBA(246, 88, 16, 1)",
+        "PaddingTop" : "15",
+        "PaddingBottom" : "15",
+        "PaddingLeft" : "15",
+        "PaddingRight" : "15"
+      },
+      "Secondary_Shape": {
+        "BorderThickness": "0",
+        "Fill" : "RGBA(243, 217, 205, 1)"
+      },
+      "Secondary_Image": {},
+      "Secondary_Gallery": {}
+    },
+    "Success" : {
+      "Success_Icon": {
+        "Color" : "RGBA(141, 198, 63, 1)",
+        "PaddingTop" : "15",
+        "PaddingBottom" : "15",
+        "PaddingLeft" : "15",
+        "PaddingRight" : "15"
+      },
+      "Success_Shape": {
+        "BorderThickness": "0",
+        "Fill" : "RGBA(222, 239, 215, 1)"
+      },
+      "Success_Label": {
+        "FontWeight" : "FontWeight.Bold",
+        "Size" : "30",
+        "Font" : "Font.'Open Sans'",
+        "Color" :"RGBA(0, 0, 0, 1)"
+      }
+    },
+    "Warning" : {
+      "Warning_Icon": {
+        "Color" : "RGBA(255, 191, 0, 1)",
+        "PaddingTop" : "15",
+        "PaddingBottom" : "15",
+        "PaddingLeft" : "15",
+        "PaddingRight" : "15"
+      },
+      "Warning_Shape": {
+        "BorderThickness": "0",
+        "Fill" : "RGBA(245, 237, 202, 1)" 
+      },
+      "Warning_Label": {
+        "FontWeight" : "FontWeight.Lighter",
+        "Size" : "24",
+        "Font" : "Font.'Verdana'",
+        "Color" :"RGBA(0, 0, 0, 1)"
+      }
+    }
+  },
+  "Shapes_Template_Name": [
+    "arrow",
+    "circle",
+    "partialCircle",
+    "rectangle",
+    "triangle",
+    "pentagon",
+    "octagon",
+    "star"
+  ]
+}
