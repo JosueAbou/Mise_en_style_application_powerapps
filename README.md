@@ -29,9 +29,9 @@ Where `<app_name>` is the name of your PowerApps application, and `<style_file>`
 ## Example
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](image/Dark.png)  |  ![](image/Ocean.png)
+![](images/app_after_applying_style.png)  |  ![](images/app_after_applying_style.png)
 
-![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2")
+![alt-text-1](images/app_after_applying_style.png "title-1") ![alt-text-2](images/app_after_applying_style.png "title-2")
 
 ## Contributing
 
