@@ -15,27 +15,18 @@ There are no requirements needed to make it work, you just need to have python i
 
 To use this tool, you'll need to follow these steps:
 
-### Definition of Style
+### 1. Definition of Style
 In order to use this tool, we must define beforehand the style that we would like to apply to the different components of our application. This style must be defined in a JSON file with a very specific format. Just group a set of attributes with specific values and then give them a name. This name must then be used during the development of the application in order to be able to apply the predefined style to it later. For example, here are the characteristics defined for a "Primary_button", All the buttons of the application with this name will therefore have this style applied after execution of our script. For this example, the style we defined is in the /script/style.json file.
 
-### Development of the Application Respecting the Naming Rules
+### 2. Development of the Application Respecting the Naming Rules
 As explained above, the controls of the PowerApps application must be named correctly in order to be able to apply the style to them. Any control that does not respect the naming rule will not be modified. Once the application has been developed, it must be exported in .msapp format.
 
-### Running the Script
+### 3. Running the Script
 You must first extract from the controls directory, the file corresponding to the page you want to modify, then execute the following command:
 
+$ python powerapps_style.py --app <app_file> --style <style_file>
 
-
-1. Specify the naming conventions for the styles you want to apply. For example, if you want to apply a style to a button, you might name it `primary_button`.
-2. Develop your PowerApps application, using the naming conventions you've specified.
-3. Run the Python script to apply your custom styles to the application.
-
-Here's an example of how to use the script:
-
-$ python powerapps_style.py --app <app_name> --style <style_file>
-
-
-Where `<app_name>` is the name of your PowerApps application, and `<style_file>` is the path to the JSON file that defines your custom styles.
+Where `<app_file>` is the name of the file extracted from your PowerApps application, and `<style_file>` is the path to the JSON file that defines your custom styles.
 
 ## Example
 App without Style          |  App after applying the style with our script 
