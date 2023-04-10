@@ -32,7 +32,7 @@ $ python powerapps_style.py --app_file <app_file> --style_file <style_file>
 
 Where `<app_file>` is the name of the file extracted from your PowerApps application, and `<style_file>` is the path to the JSON file that defines your custom styles.
 
-Here is a BPMN Diagram summarizing all the whole process :
+Here is a BPMN Diagram summarizing the whole process :
 <p><img src="images/process.png"/></p>
 
 ## Example
