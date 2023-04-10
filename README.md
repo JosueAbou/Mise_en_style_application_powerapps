@@ -26,6 +26,11 @@ $ python powerapps_style.py --app <app_name> --style <style_file>
 
 Where `<app_name>` is the name of your PowerApps application, and `<style_file>` is the path to the JSON file that defines your custom styles.
 
+## Example
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](image/Dark.png)  |  ![](image/Ocean.png)
+
 ## Contributing
 
 We welcome contributions from the community! To contribute to this project, simply fork this repository, make your changes, and submit a pull request.
