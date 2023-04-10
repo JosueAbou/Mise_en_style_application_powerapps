@@ -1,20 +1,14 @@
+from optparse import OptionParser
 import json
 import os
 
 
-# ALL_NAMES = ['Primary_Button', 'Secondary_Button', 'Primary_Label', 'Secondary_Label', 'Primary_Checkbox', 'Secondary_Checkbox',
-#             'Primary_Radio', 'Secondary_Radio', 'Primary_TextInput', 'Secondary_TextInput', 'Primary_Dropdown', 'Secondary_Dropdown',
-#             'Primary_Icon', 'Secondary_Icon', 'Primary_Shape', 'Secondary_Shape', 'Primary_Image', 'Secondary_Image']
+class MissingParameterError(Exception):
+    def __init__(self, message):
+        self.message = message  
 
-
-# PARTICULAR_NAMES = ['Primary_Gallery', 'Secondary_Gallery'] 
-# PARTICULAR_NAMES = [] 
 
 DESIGN_VARIETIES = ["Primary","Secondary","Success","Warning"]
-
-
-with open(os.path.join("./", "style.json"), "r") as file:
-    ELEMENTS = json.load(file)
 
 
 def getPropertiesFromName(elmt_name): 
@@ -37,7 +31,6 @@ def updateComponent(chld, spc_properties,glb_properties, dsg_type):
 
 
 def updateJsonFile(jsonFile):
-    # Load the JSON file
     with open(os.path.join("./", jsonFile), "r") as file:
         data = json.load(file)
 
@@ -59,28 +52,8 @@ def updateJsonFile(jsonFile):
             element_name = design_type+"_"+element_type
  
             if(element_type == "Gallery"):
-                # for subchild in child["Children"]:
-                #     print(subchild["StyleName"])
-                #     if(subchild["Template"]["Name"] == "image"):
-                #         print("image")
-                #     elif(subchild["Template"]["Name"] == "label"):
-                #         if(subchild["StyleName"] == "subtitleLabelStyle"):
-                #             design_type, _ , specific_properties, global_properties = getPropertiesFromName(design_type+"_Label")
-                #             print(_)
-                #             updateComponent(subchild, specific_properties, global_properties, design_type)
-                #         elif(subchild["StyleName"] == "titleLabelStyle"):
-                #             design_type, _ , specific_properties, global_properties = getPropertiesFromName(design_type+"_Label")
-                #             print(_)
-                #             updateComponent(subchild, specific_properties, global_properties, design_type)
-                #     elif(subchild["Template"]["Name"] == "icon"):
-                #         design_type, _ , specific_properties, global_properties = getPropertiesFromName(design_type+"_Icon")
-                #         print(_)
-                #         updateComponent(subchild, specific_properties, global_properties, design_type)
-                #     elif(subchild["Template"]["Name"] == "rectangle"):
-                #         design_type, _ , specific_properties, global_properties = getPropertiesFromName(design_type+"_Shape")
-                #         print(_)
-                #         updateComponent(subchild, specific_properties, global_properties, design_type)
-
+                # We haven't yet defined the style for galleries
+                # Feel free to contribute 
                 pass
             
             else:
@@ -90,10 +63,20 @@ def updateJsonFile(jsonFile):
                 updateComponent(child, specific_properties, global_properties, design_type)
 
                 
-    # Write the modified JSON to a file
     with open(os.path.join("./", jsonFile), "w") as file:
         json.dump(data, file, indent=4)
 
-
 if __name__ == "__main__":
-    updateJsonFile("3.json")
+    parser = OptionParser()
+    parser.add_option('-a','--app_file',dest = 'app_file', help='the name of the json file to update')
+    parser.add_option('-s','--style_file',dest = 'style_file', help='the name of the json file containing the style to apply')
+    (options,args) = parser.parse_args()
+
+    if (options.app_file and options.style_file):
+        # load the style
+        with open(os.path.join("./", options.style_file), "r") as file:
+            ELEMENTS = json.load(file)
+        # Do the modifications
+        updateJsonFile(options.app_file)
+    else:
+        raise MissingParameterError("Please make sure you are calling the program with the right parameters")
