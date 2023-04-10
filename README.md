@@ -17,7 +17,7 @@ To use this tool, you'll need to follow these steps:
 
 ### 1. Definition of Style
 In order to use this tool, we must define beforehand the style that we would like to apply to the different components of our application. This style must be defined in a JSON file with a very specific format. Just group a set of attributes with specific values and then give them a name. This name must then be used during the development of the application in order to be able to apply the predefined style to it later. For example, here are the characteristics defined for a `"Primary_button"`:
-<img src="images/primary_button_style.png"/>
+<p><img src="images/primary_button_style.png"/></p>
 All the buttons of the application with this name will therefore have this style applied after execution of our script. 
 
 For the example (just below), the style we defined is in the `/script/style.json` file.
