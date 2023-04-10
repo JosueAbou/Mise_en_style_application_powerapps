@@ -31,6 +31,8 @@ Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
 ![](image/Dark.png)  |  ![](image/Ocean.png)
 
+![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2")
+
 ## Contributing
 
 We welcome contributions from the community! To contribute to this project, simply fork this repository, make your changes, and submit a pull request.
